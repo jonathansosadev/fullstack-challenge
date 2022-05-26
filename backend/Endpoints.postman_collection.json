@@ -43,12 +43,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/files/list",
+					"raw": "http://localhost:8000/files/list",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5000",
+					"port": "8000",
 					"path": [
 						"files",
 						"list"
@@ -83,12 +83,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/files/data?fileName=test6.csv",
+					"raw": "http://localhost:8000/files/data?fileName=test6.csv",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5000",
+					"port": "8000",
 					"path": [
 						"files",
 						"data"
