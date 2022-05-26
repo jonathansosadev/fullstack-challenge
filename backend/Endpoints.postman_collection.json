@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "b73f761d-955a-41d8-ad10-11b5966a3b11",
+		"name": "Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "External test",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "aSuperSecretKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://echo-serv.tbxnet.com/v1/secret/files",
+					"protocol": "https",
+					"host": [
+						"echo-serv",
+						"tbxnet",
+						"com"
+					],
+					"path": [
+						"v1",
+						"secret",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar archivos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/files/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"files",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/files/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"files",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar con filtro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/files/data?fileName=test6.csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"files",
+						"data"
+					],
+					"query": [
+						{
+							"key": "fileName",
+							"value": "test6.csv"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

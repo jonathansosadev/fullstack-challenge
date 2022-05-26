@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  expressapp:
+    container_name: expressapp
+    build: ./backend
+    expose:
+      - 8000
+    volumes:
+      - ./backend:/usr/src/app
+  reactapp:
+    container_name: reactapp
+    build: ./frontend
+    expose:
+      - 3000
+    volumes:
+      - ./frontend:/usr/src/app
