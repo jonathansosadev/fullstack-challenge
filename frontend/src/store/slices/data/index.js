@@ -19,7 +19,7 @@ export default dataSlice.reducer;
 
 export const fetchAllData = () => {
     return (dispatch) => {
-        axios.get('http://localhost:5000/files/data').then((response) => {
+        axios.get('http://localhost:8000/files/data').then((response) => {
             console.log(response);
             dispatch(setDataList(response.data));
         }).catch((error) => {

@@ -1,10 +1,12 @@
-version: "3.9"
+version: "2.3"
 services:
   expressapp:
     container_name: expressapp
     build: ./backend
     expose:
       - 8000
+    ports:
+      - "8000:8000"
     volumes:
       - ./backend:/usr/src/app
   reactapp:
@@ -12,5 +14,7 @@ services:
     build: ./frontend
     expose:
       - 3000
+    ports:
+      - "3000:3000"
     volumes:
       - ./frontend:/usr/src/app
